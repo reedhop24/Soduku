@@ -45,7 +45,7 @@ const generateBoard = (difficulty) => {
                 }
                 randIter++;
             } else {
-                board[i].push(0)
+                board[i].push(null)
             }
         }
     }

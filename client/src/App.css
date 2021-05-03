@@ -1,38 +1,104 @@
-.App {
+.form {
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+select {
+  display: inline;
+}
+
+.centered-col {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* table styling */
+
+.board-table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 5px;
+}
+
+.board-td {
+  border: 1px solid #C7C7C7;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.board-td:nth-child(3) {
+  border-right:2px solid #555555;
+}
+
+.board-td:nth-child(6) {
+  border-right:2px solid #555555;
+}
+
+.board-tr:nth-child(3) {
+  border-bottom:2px solid #555555;
+}
+
+.board-tr:nth-child(6) {
+  border-bottom:2px solid #555555;
+}
+
+.selection-table {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.selection-td {
+  border: 2px solid #555555;
+  cursor: pointer;
+}
+
+.selection-td:hover {
+  background-color: #a8dbe7;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  tr {
+    height: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  tr {
+    height: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  tr {
+    height: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  tr {
+    height: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  tr {
+    height: 50px;
   }
 }
