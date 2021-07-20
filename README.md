@@ -17,10 +17,6 @@
 ##### Back End: Node.js, Express, and Body Parser
 ##### Testing: Chai(Unit Tests)
 
-### Deployment
-##### Both the Front and the Back End are deployed to Heroku.
-##### View the App: https://sleepy-cove-68117.herokuapp.com/
-
 ##### Screenshot:
 
 ![Sudoku-Screenshot](https://user-images.githubusercontent.com/40578449/116949534-5a1d9900-ac37-11eb-9e50-9e522ff9f192.PNG)
